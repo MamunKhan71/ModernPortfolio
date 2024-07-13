@@ -21,7 +21,7 @@ module.exports = {
     extend: {
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
-        "shimmer": "shimmer 2s linear infinite"
+        "shimmer": "shimmer 5s linear infinite"
       },
       keyframes: {
         meteor: {
