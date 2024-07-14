@@ -102,7 +102,7 @@ export const InfiniteMovingCards = ({
                                     className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
                                 ></div>
                                 <span className="flex items-center justify-center gap-3">
-                                <IconComponent className="text-3xl" />
+                                    <IconComponent className="text-3xl" />
                                     {item.name}
                                 </span>
 

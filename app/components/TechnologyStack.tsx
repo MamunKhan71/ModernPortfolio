@@ -38,7 +38,7 @@ export function TechnologyStack() {
     );
 }
 
-const skillsArray = [
+export const skillsArray = [
     { id: 1, name: "HTML5", icon: FaHtml5 },
     { id: 2, name: "CSS3", icon: FaCss3Alt },
     { id: 3, name: "JavaScript", icon: DiJavascript },

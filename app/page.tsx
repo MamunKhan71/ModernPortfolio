@@ -15,7 +15,7 @@ export default function Home() {
         <TechnologyStack />
         <Education />
         <MyWorkingProcess />
-        {/* <Projects /> */}
+        <Projects />
         <ContactMe />
         <div className="h-96 w-full">
 

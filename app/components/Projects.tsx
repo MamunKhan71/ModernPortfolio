@@ -3,6 +3,11 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { TextGenerateEffect } from "./ui/TextGenerate";
+import { DiJavascript } from "react-icons/di";
+import { FaCss3Alt, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiAntdesign, SiDaisyui, SiExpress, SiJsonwebtokens, SiMongodb, SiNetlify, SiVite } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export function Projects() {
     return (
@@ -17,6 +22,7 @@ export function Projects() {
                         header={<Skeleton imageLink={item["Thumbnail URL"]} />}
                         className={cn("[&>p:text-lg]")}
                         liveLink={item["Live Link"]}
+                        technology={item["technology_used"]}
                     />
                 ))}
             </BentoGrid>
@@ -43,16 +49,17 @@ const items = [
             "Real-time Notifications"
         ],
         "technology_used": [
-            "nodejs",
-            "javascript",
-            "firebase",
-            "html5",
-            "mongodb",
-            "stripe",
-            "reactjs",
-            "expressjs",
-            "tailwindcss",
-            "shadcn-ui"
+            FaGithub,
+            FaNodeJs,
+            DiJavascript,
+            IoLogoFirebase,
+            FaHtml5,
+            SiMongodb,
+            FaCss3Alt,
+            FaReact,
+            SiExpress,
+            RiTailwindCssFill,
+            SiJsonwebtokens
         ]
     },
     {
@@ -69,17 +76,18 @@ const items = [
             "Donator Profiles"
         ],
         "technology_used": [
-            "react",
-            "nodejs",
-            "javascript",
-            "firebase",
-            "html5",
-            "mongodb",
-            "stripe",
-            "css3",
-            "expressjs",
-            "jwt-authentication",
-            "shadcn-ui"
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            IoLogoFirebase,
+            FaHtml5,
+            SiMongodb,
+            FaCss3Alt,
+            SiExpress,
+            SiJsonwebtokens,
+            SiAntdesign,
+            FaGithub,
+            SiDaisyui
         ]
     },
     {
@@ -92,21 +100,22 @@ const items = [
         "Project ID": "RE-002",
         "core_features": [
             "Property Listings",
-            "Property Management",
-            "Transaction Facilitation"
+            "Transaction Management",
+            "User Authentication"
         ],
         "technology_used": [
-            "react",
-            "nodejs",
-            "javascript",
-            "firebase",
-            "html5",
-            "mongodb",
-            "stripe",
-            "css3",
-            "expressjs",
-            "jwt-authentication",
-            "shadcn-ui"
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            IoLogoFirebase,
+            FaHtml5,
+            SiMongodb,
+            FaCss3Alt,
+            SiExpress,
+            SiJsonwebtokens,
+            SiAntdesign,
+            FaGithub,
+            SiDaisyui
         ]
     },
     {
@@ -118,25 +127,23 @@ const items = [
         "Source Code": "https://github.com/MamunKhan71/CraftifyBD",
         "Project ID": "OA-003",
         "core_features": [
-            "Search and Filter",
-            "Save Favorites",
-            "Responsive Design"
+            "Product Listings",
+            "Shopping Cart",
+            "Payment Integration"
         ],
         "technology_used": [
-            "react",
-            "nodejs",
-            "javascript",
-            "firebase",
-            "html5",
-            "mongodb",
-            "stripe",
-            "css3",
-            "expressjs",
-            "jwt-authentication",
-            "lottie",
-            "toastify",
-            "typewriter-animation",
-            "tailwindcss"
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            IoLogoFirebase,
+            FaHtml5,
+            SiMongodb,
+            FaCss3Alt,
+            SiExpress,
+            SiJsonwebtokens,
+            SiAntdesign,
+            FaGithub,
+            SiDaisyui
         ]
     },
     {
@@ -148,18 +155,19 @@ const items = [
         "Source Code": "https://github.com/MamunKhan71/react-setup",
         "Project ID": "RS-004",
         "core_features": [
-            "All-in-One Setup",
-            "Saves Time",
-            "Efficient Development"
+            "Setup Guides",
+            "Tool Recommendations",
+            "Resource Links"
         ],
         "technology_used": [
-            "react",
-            "nodejs",
-            "javascript",
-            "html5",
-            "css3",
-            "react-icons",
-            "tailwindcss"
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiVite,
+            SiNetlify,
+            FaGithub
         ]
     },
     {
@@ -171,22 +179,19 @@ const items = [
         "Source Code": "https://github.com/MamunKhan71/Boi-Bazaar",
         "Project ID": "BB-005",
         "core_features": [
-            "Figma-Inspired",
-            "Dynamic Banner",
-            "Rich Book Data",
-            "Books Showcase",
-            "Interactive Book Details Page",
-            "Toast Notifications",
-            "Listed Books Page (Read & Wishlist Management)",
-            "Responsive Design",
-            "Custom Shape Bar Chart (Pages Read)"
+            "Book Listings",
+            "Search and Filter",
+            "User Reviews"
         ],
         "technology_used": [
-            "HTML",
-            "CSS",
-            "Tailwind CSS",
-            "JavaScript",
-            "React"
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub,
+            SiAntdesign
         ]
     },
     {
@@ -198,13 +203,196 @@ const items = [
         "Source Code": "https://github.com/MamunKhan71/GuruLearning",
         "Project ID": "OWC-006",
         "core_features": [
-            "Ostad-Inspired",
-            "Responsive Design"
+            "Course Listings",
+            "User Authentication",
+            "Progress Tracking"
         ],
         "technology_used": [
-            "HTML",
-            "CSS",
-            "Tailwind CSS"
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub,
+            SiAntdesign
+        ]
+    },
+    {
+        "Project Name": "Dua Ruqyah Home Page",
+        "Project Type": "Online Quran Platform",
+        "Description": "An online Quran platform focusing on providing Islamic content, including Quranic verses, prayers (duas), and Ruqyah (spiritual healing) resources.",
+        "Live Link": "https://dua-ruqyah-mamun.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/zXyjrV2/dua.png",
+        "Source Code": "https://github.com/MamunKhan71/dua-ruqyah",
+        "Project ID": "DRH-007",
+        "core_features": [
+            "Quranic Content",
+            "Prayer Resources",
+            "Spiritual Healing Guides"
+        ],
+        "technology_used": [
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub,
+            SiAntdesign
+        ]
+    },
+    {
+        "Project Name": "Flavor Quest Website",
+        "Project Type": "Online Food Recipe Website",
+        "Description": "An online platform dedicated to food enthusiasts, offering a wide array of recipes, cooking tips, and culinary inspirations.",
+        "Live Link": "https://flavorquest-md-mamun-07.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/KKbHKrJ/cook.png",
+        "Source Code": "https://github.com/MamunKhan71/flavor-quest",
+        "Project ID": "FQW-008",
+        "core_features": [
+            "Recipe Listings",
+            "Cooking Tips",
+            "User Reviews"
+        ],
+        "technology_used": [
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub,
+            SiAntdesign
+        ]
+    },
+    {
+        "Project Name": "Online Bus Ticketing",
+        "Project Type": "Online Bus Ticketing System",
+        "Description": "A comprehensive platform for booking bus tickets online, providing users with easy access to bus schedules, routes, and ticket reservations.",
+        "Live Link": "https://gari-lagbe.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/2PZnLP6/car-Booking.png",
+        "Source Code": "https://github.com/MamunKhan71/Gari-Lagbe",
+        "Project ID": "OBT-009",
+        "core_features": [
+            "Bus Schedules",
+            "Ticket Reservations",
+            "Route Information"
+        ],
+        "technology_used": [
+            FaReact,
+            FaNodeJs,
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub,
+            SiAntdesign
+        ]
+    },
+    {
+        "Project Name": "RGB Color Code",
+        "Project Type": "RGB Code Generator",
+        "Description": "A web-based tool for generating RGB color codes, assisting designers and developers in choosing and visualizing colors for their projects.",
+        "Live Link": "https://rgb-converter.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/TLQjs0w/rgb.png",
+        "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/rgb%20color%20generator",
+        "Project ID": "RGB-010",
+        "core_features": [
+            "Color Generation",
+            "Color Visualization",
+            "Copy to Clipboard"
+        ],
+        "technology_used": [
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub
+        ]
+    },
+    {
+        "Project Name": "Key Code Generator",
+        "Project Type": "ASCII Code Generator",
+        "Description": "An online utility tool for generating ASCII codes corresponding to keyboard keys, facilitating the creation of key-based functionalities.",
+        "Live Link": "https://keycode-generator-mk.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/dr8w9mV/keyCode.png",
+        "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/key%20codes",
+        "Project ID": "KCG-011",
+        "core_features": [
+            "ASCII Code Generation",
+            "Key Mapping",
+            "Copy to Clipboard"
+        ],
+        "technology_used": [
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub
+        ]
+    },
+    {
+        "Project Name": "Clash Alpha Game",
+        "Project Type": "Typing Game",
+        "Description": "A typing game designed to enhance typing speed and accuracy through fun and engaging gameplay mechanics.",
+        "Live Link": "https://clash-alpha-game.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/vhF5tPZ/alpha.png",
+        "Source Code": "https://github.com/MamunKhan71/Alpha-Clash",
+        "Project ID": "CAG-012",
+        "core_features": [
+            "Typing Challenges",
+            "Speed and Accuracy Tracking",
+            "Leaderboard"
+        ],
+        "technology_used": [
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub
+        ]
+    },
+    {
+        "Project Name": "Coin Flipper",
+        "Project Type": "Coin Flipping Simulator",
+        "Description": "An online coin flipping tool for simulating random coin tosses, commonly used for decision-making purposes.",
+        "Live Link": "https://coin-flipper-mk.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/0rTh5QC/coin.png",
+        "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/coin%20flipper",
+        "Project ID": "CF-013",
+        "core_features": [
+            "Random Coin Flips",
+            "Flip History",
+            "Decision Making Tool"
+        ],
+        "technology_used": [
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub
+        ]
+    },
+    {
+        "Project Name": "QR Code Generator",
+        "Project Type": "QR Code Generator",
+        "Description": "An online utility for generating QR codes, assisting users in creating QR codes for various purposes.",
+        "Live Link": "https://qr-code-generator-mk.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/WxVmWq1/qr.png",
+        "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/qr%20code%20generator",
+        "Project ID": "QRG-014",
+        "core_features": [
+            "QR Code Generation",
+            "Downloadable Codes",
+            "Customizable Options"
+        ],
+        "technology_used": [
+            DiJavascript,
+            FaHtml5,
+            FaCss3Alt,
+            SiNetlify,
+            FaGithub
         ]
     }
 ]
