@@ -8,7 +8,7 @@ export function Projects() {
     return (
         <div className="space-y-12">
             <TextGenerateEffect words="Projects" className="text-4xl text-center" />
-            <BentoGrid className="w-full mx-auto md:auto-rows-[20rem]">
+            <BentoGrid className="w-full">
                 {items.map((item, i) => (
                     <BentoGridItem
                         key={i}
@@ -24,8 +24,8 @@ export function Projects() {
     );
 }
 const Skeleton = ({ imageLink }: { imageLink: string }) => (
-    <div className="flex flex-1 w-full h-full min-h-[8rem] rounded-xl">
-        <img src={imageLink} className="w-full object-cover rounded-xl" alt="" />
+    <div className="flex flex-1 w-full h-96 rounded-xl">
+        <img src={imageLink} className="w-full h-96 object-cover rounded-xl" alt="" />
     </div>
 );
 const items = [

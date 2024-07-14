@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
-import { FaLink, FaMoneyCheckDollar } from "react-icons/fa6";
+import { FaLink } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 export const BentoGrid = ({
   className,
@@ -11,7 +12,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 px-10",
+        "grid grid-cols-1 md:grid-cols-3 gap-4 ",
         className
       )}
     >
@@ -51,12 +52,12 @@ export const BentoGridItem = ({
         <div className="flex items-center gap-2">
           <a href={liveLink}>
             <button className="inline-flex gap-2 h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              View Project <FaLink />
+            <FaLink /> View Project 
             </button>
           </a>
           <a href={liveLink}>
             <button className="inline-flex gap-2 h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              Source Code <FaLink />
+            <FaGithub /> Source Code 
             </button>
           </a>
         </div>
