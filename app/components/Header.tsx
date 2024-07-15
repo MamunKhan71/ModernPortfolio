@@ -10,7 +10,7 @@ const Header = () => {
     const words = ["Full Stack Web Developer", "MERN Stack Developer"];
 
     return (
-        <div className="text-center flex justify-between items-center w-full">
+        <div className="text-center flex justify-between items-center w-full" id='about'>
             <div className="flex-1 w-full flex items-center gap-12 justify-center">
                 <div>
                     <TypewriterEffectSmooth className="text-left" words={[
@@ -39,7 +39,7 @@ const Header = () => {
                         </div>
                         <a href="MyResume.pdf" download={true}>
                             <button className="inline-flex gap-2 items-center h-12 animate-shimmer justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                                Download My CV <FaDownload />
+                                Download My Resume <FaDownload />
                             </button>
                         </a>
                     </div>

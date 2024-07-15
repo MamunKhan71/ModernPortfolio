@@ -11,10 +11,10 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 export function Projects() {
     return (
-        <div className="space-y-12">
+        <div className="space-y-12" id="projects">
             <TextGenerateEffect words="Projects" className="text-4xl text-center" />
             <BentoGrid className="w-full">
-                {items.map((item, i) => (
+                {items.slice(0,6).map((item, i) => (
                     <BentoGridItem
                         key={i}
                         title={item["Project Name"]}
@@ -22,7 +22,9 @@ export function Projects() {
                         header={<Skeleton imageLink={item["Thumbnail URL"]} />}
                         className={cn("[&>p:text-lg]")}
                         liveLink={item["Live Link"]}
+                        sourceCode={item["Source Code"]}
                         technology={item["technology_used"]}
+                        features={item["core_features"]}
                     />
                 ))}
             </BentoGrid>

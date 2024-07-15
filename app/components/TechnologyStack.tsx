@@ -25,7 +25,7 @@ import { TextGenerateEffect } from "./ui/TextGenerate";
 
 export function TechnologyStack() {
     return (
-        <div className="space-y-6">
+        <div className="space-y-6" id="tech">
             <TextGenerateEffect words="Technology Stack" className="text-4xl text-center"/>
             <div className="h-auto rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
                 <InfiniteMovingCards

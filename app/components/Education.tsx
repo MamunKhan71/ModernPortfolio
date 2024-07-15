@@ -41,7 +41,7 @@ const content = [
 ];
 export function Education() {
     return (
-        <div className="space-y-12">
+        <div className="space-y-12" id="education">
             <TextGenerateEffect words="Education" className="text-4xl text-center" />
             <StickyScroll content={content} />
         </div>

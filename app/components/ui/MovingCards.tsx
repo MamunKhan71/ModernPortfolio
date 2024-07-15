@@ -105,8 +105,6 @@ export const InfiniteMovingCards = ({
                                     <IconComponent className="text-3xl" />
                                     {item.name}
                                 </span>
-
-
                             </blockquote>
                         </li>
                     )
