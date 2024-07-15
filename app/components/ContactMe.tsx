@@ -45,7 +45,7 @@ export function ContactMe() {
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                         <LabelInputContainer>
                             <Label htmlFor="name">Name</Label>
-                            <Input id="name" placeholder="Tyler" type="text" />
+                            <Input id="name" placeholder="Your name here" type="text" />
                         </LabelInputContainer>
                     </div>
                     <LabelInputContainer className="mb-4">
