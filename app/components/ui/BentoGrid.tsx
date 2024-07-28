@@ -53,8 +53,8 @@ export const BentoGridItem = ({
       <div className="group-hover/bento:translate-x-2 transition duration-200 space-y-3">
         <div className="font-sans font-bold text-sm flex flex-wrap items-center gap-2">
           {
-            features?.map(feature => (
-              <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-md p-px text-xs font-semibold leading-6  text-white inline-block">
+            features?.map((feature, index) => (
+              <button key={index} className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-md p-px text-xs font-semibold leading-6  text-white inline-block">
                 <span className="absolute inset-0 overflow-hidden rounded-md">
                   <span className="absolute inset-0 rounded-md bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 </span>
