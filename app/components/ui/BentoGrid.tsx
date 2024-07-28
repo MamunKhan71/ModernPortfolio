@@ -36,9 +36,9 @@ export const BentoGridItem = ({
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   liveLink?: string;
-  technology?: [];
+  technology?: string[];
   sourceCode?: string;
-  features?: [];
+  features?: string[];
 }) => {
   return (
     <div

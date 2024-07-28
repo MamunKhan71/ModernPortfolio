@@ -1,7 +1,5 @@
 import React from "react";
-import { Meteors } from "@/app/components/ui/Meteros";
 import Image from "next/image";
-import { Button } from "./ui/MovingBorder";
 import { GlareCard } from "./ui/GlareCard";
 
 export function Profile() {

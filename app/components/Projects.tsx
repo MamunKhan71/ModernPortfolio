@@ -8,13 +8,14 @@ import { FaCss3Alt, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa"
 import { SiAntdesign, SiDaisyui, SiExpress, SiJsonwebtokens, SiMongodb, SiNetlify, SiVite } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
+import Image from "next/image";
 
 export function Projects() {
     return (
         <div className="space-y-12" id="projects">
             <TextGenerateEffect words="Projects" className="text-4xl text-center" />
             <BentoGrid className="w-full">
-                {items.slice(0,6).map((item, i) => (
+                {items.slice(0, 6).map((item, i) => (
                     <BentoGridItem
                         key={i}
                         title={item["Project Name"]}
@@ -33,7 +34,7 @@ export function Projects() {
 }
 const Skeleton = ({ imageLink }: { imageLink: string }) => (
     <div className="flex flex-1 w-full h-96 rounded-xl">
-        <img src={imageLink} className="w-full h-96 object-cover rounded-xl" alt="" />
+        <Image src={imageLink} height={0} width={0} sizes="100vw" className="w-full h-96 object-cover rounded-xl" alt="" />
     </div>
 );
 const items = [
