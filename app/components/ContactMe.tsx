@@ -10,10 +10,10 @@ import { toast } from "sonner";
 export function ContactMe() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const name = e.target.name.value
-        const email = e.target.email.value
-        const message = e.target.message.value
-        const subject = e.target.subject.value
+        const name = (e.target as HTMLFormElement).name.value;
+        const email = (e.target as HTMLFormElement).email.value;
+        const message = (e.target as HTMLFormElement).message.value;
+        const subject = (e.target as HTMLFormElement).subject.value;
         var emailData = {
             service_id: process.env.NEXT_PUBLIC_SERVICE_ID,
             template_id: process.env.NEXT_PUBLIC_TEMPLATE_ID,
