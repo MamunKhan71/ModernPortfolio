@@ -29,17 +29,17 @@ const items = [
             "Real-time Notifications"
         ],
         "technology_used": [
-            FaGithub,
-            FaNodeJs,
-            DiJavascript,
-            IoLogoFirebase,
-            FaHtml5,
-            SiMongodb,
-            FaCss3Alt,
-            FaReact,
-            SiExpress,
-            RiTailwindCssFill,
-            SiJsonwebtokens
+            <FaGithub />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <IoLogoFirebase />,
+            <FaHtml5 />,
+            <SiMongodb />,
+            <FaCss3Alt />,
+            <FaReact />,
+            <SiExpress />,
+            <RiTailwindCssFill />,
+            <SiJsonwebtokens />
         ]
     },
     {
@@ -56,18 +56,18 @@ const items = [
             "Donator Profiles"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            IoLogoFirebase,
-            FaHtml5,
-            SiMongodb,
-            FaCss3Alt,
-            SiExpress,
-            SiJsonwebtokens,
-            SiAntdesign,
-            FaGithub,
-            SiDaisyui
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <IoLogoFirebase />,
+            <FaHtml5 />,
+            <SiMongodb />,
+            <FaCss3Alt />,
+            <SiExpress />,
+            <SiJsonwebtokens />,
+            <SiAntdesign />,
+            <FaGithub />,
+            <SiDaisyui />
         ]
     },
     {
@@ -84,18 +84,18 @@ const items = [
             "User Authentication"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            IoLogoFirebase,
-            FaHtml5,
-            SiMongodb,
-            FaCss3Alt,
-            SiExpress,
-            SiJsonwebtokens,
-            SiAntdesign,
-            FaGithub,
-            SiDaisyui
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <IoLogoFirebase />,
+            <FaHtml5 />,
+            <SiMongodb />,
+            <FaCss3Alt />,
+            <SiExpress />,
+            <SiJsonwebtokens />,
+            <SiAntdesign />,
+            <FaGithub />,
+            <SiDaisyui />
         ]
     },
     {
@@ -112,18 +112,18 @@ const items = [
             "Payment Integration"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            IoLogoFirebase,
-            FaHtml5,
-            SiMongodb,
-            FaCss3Alt,
-            SiExpress,
-            SiJsonwebtokens,
-            SiAntdesign,
-            FaGithub,
-            SiDaisyui
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <IoLogoFirebase />,
+            <FaHtml5 />,
+            <SiMongodb />,
+            <FaCss3Alt />,
+            <SiExpress />,
+            <SiJsonwebtokens />,
+            <SiAntdesign />,
+            <FaGithub />,
+            <SiDaisyui />
         ]
     },
     {
@@ -140,14 +140,14 @@ const items = [
             "Resource Links"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiVite,
-            SiNetlify,
-            FaGithub
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiVite />,
+            <SiNetlify />,
+            <FaGithub />
         ]
     },
     {
@@ -164,14 +164,14 @@ const items = [
             "User Reviews"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub,
-            SiAntdesign
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />,
+            <SiAntdesign />
         ]
     },
     {
@@ -188,14 +188,14 @@ const items = [
             "Progress Tracking"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub,
-            SiAntdesign
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />,
+            <SiAntdesign />
         ]
     },
     {
@@ -212,14 +212,14 @@ const items = [
             "Spiritual Healing Guides"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub,
-            SiAntdesign
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />,
+            <SiAntdesign />
         ]
     },
     {
@@ -236,14 +236,14 @@ const items = [
             "User Reviews"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub,
-            SiAntdesign
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />,
+            <SiAntdesign />
         ]
     },
     {
@@ -255,19 +255,19 @@ const items = [
         "Source Code": "https://github.com/MamunKhan71/Gari-Lagbe",
         "Project ID": "OBT-009",
         "core_features": [
+            "Ticket Booking",
             "Bus Schedules",
-            "Ticket Reservations",
             "Route Information"
         ],
         "technology_used": [
-            FaReact,
-            FaNodeJs,
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub,
-            SiAntdesign
+            <FaReact />,
+            <FaNodeJs />,
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />,
+            <SiAntdesign />
         ]
     },
     {
@@ -279,16 +279,16 @@ const items = [
         "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/rgb%20color%20generator",
         "Project ID": "RGB-010",
         "core_features": [
-            "Color Generation",
-            "Color Visualization",
+            "RGB Color Generation",
+            "Color Preview",
             "Copy to Clipboard"
         ],
         "technology_used": [
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />
         ]
     },
     {
@@ -301,15 +301,15 @@ const items = [
         "Project ID": "KCG-011",
         "core_features": [
             "ASCII Code Generation",
-            "Key Mapping",
+            "Key Press Detection",
             "Copy to Clipboard"
         ],
         "technology_used": [
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />
         ]
     },
     {
@@ -321,16 +321,16 @@ const items = [
         "Source Code": "https://github.com/MamunKhan71/Alpha-Clash",
         "Project ID": "CAG-012",
         "core_features": [
-            "Typing Challenges",
-            "Speed and Accuracy Tracking",
-            "Leaderboard"
+            "Typing Practice",
+            "Score Tracking",
+            "Interactive Gameplay"
         ],
         "technology_used": [
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />
         ]
     },
     {
@@ -342,40 +342,62 @@ const items = [
         "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/coin%20flipper",
         "Project ID": "CF-013",
         "core_features": [
-            "Random Coin Flips",
-            "Flip History",
-            "Decision Making Tool"
+            "Random Coin Flip",
+            "Heads or Tails",
+            "Flip Animation"
         ],
         "technology_used": [
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />
         ]
     },
     {
         "Project Name": "QR Code Generator",
         "Project Type": "QR Code Generator",
-        "Description": "An online utility for generating QR codes, assisting users in creating QR codes for various purposes.",
+        "Description": "An online utility for generating QR codes, providing users with the ability to create QR codes for URLs, text, and other data.",
         "Live Link": "https://qr-code-generator-mk.netlify.app/",
-        "Thumbnail URL": "https://i.ibb.co/WxVmWq1/qr.png",
+        "Thumbnail URL": "https://i.ibb.co/WPnzrxn/qr.png",
         "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/qr%20code%20generator",
         "Project ID": "QRG-014",
         "core_features": [
             "QR Code Generation",
-            "Downloadable Codes",
-            "Customizable Options"
+            "Data Encoding",
+            "Download QR Code"
         ],
         "technology_used": [
-            DiJavascript,
-            FaHtml5,
-            FaCss3Alt,
-            SiNetlify,
-            FaGithub
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />
+        ]
+    },
+    {
+        "Project Name": "Stopwatch",
+        "Project Type": "Time Tracking Tool",
+        "Description": "A simple and effective stopwatch tool for tracking time intervals, with start, stop, and reset functionalities.",
+        "Live Link": "https://stopwatch-mk.netlify.app/",
+        "Thumbnail URL": "https://i.ibb.co/FmRZWr3/stopwatch.png",
+        "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/stopwatch",
+        "Project ID": "SW-015",
+        "core_features": [
+            "Start, Stop, Reset",
+            "Lap Timing",
+            "Time Display"
+        ],
+        "technology_used": [
+            <DiJavascript />,
+            <FaHtml5 />,
+            <FaCss3Alt />,
+            <SiNetlify />,
+            <FaGithub />
         ]
     }
-]
+];
+
 
 export function Projects() {
     return (
