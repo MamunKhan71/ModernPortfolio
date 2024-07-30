@@ -9,29 +9,6 @@ import { SiAntdesign, SiDaisyui, SiExpress, SiJsonwebtokens, SiMongodb, SiNetlif
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import Image from "next/image";
-
-export function Projects() {
-    return (
-        <div className="space-y-12" id="projects">
-            <TextGenerateEffect words="Projects" className="text-4xl text-center" />
-            <BentoGrid className="w-full">
-                {items.slice(0, 6).map((item, i) => (
-                    <BentoGridItem
-                        key={i}
-                        title={item["Project Name"]}
-                        description={item["Description"]}
-                        header={<Skeleton imageLink={item["Thumbnail URL"]} />}
-                        className={cn("[&>p:text-lg]")}
-                        liveLink={item["Live Link"]}
-                        sourceCode={item["Source Code"]}
-                        technology={item["technology_used"]}
-                        features={item["core_features"]}
-                    />
-                ))}
-            </BentoGrid>
-        </div>
-    );
-}
 const Skeleton = ({ imageLink }: { imageLink: string }) => (
     <div className="flex flex-1 w-full h-96 rounded-xl">
         <Image src={imageLink} height={0} width={0} sizes="100vw" className="w-full h-96 object-cover rounded-xl" alt="" />
@@ -399,3 +376,26 @@ const items = [
         ]
     }
 ]
+
+export function Projects() {
+    return (
+        <div className="space-y-12" id="projects">
+            <TextGenerateEffect words="Projects" className="text-4xl text-center" />
+            <BentoGrid className="w-full">
+                {items.slice(0, 6).map((item, i) => (
+                    <BentoGridItem
+                        key={i}
+                        title={item["Project Name"]}
+                        description={item["Description"]}
+                        header={<Skeleton imageLink={item["Thumbnail URL"]} />}
+                        className={cn("[&>p:text-lg]")}
+                        liveLink={item["Live Link"]}
+                        sourceCode={item["Source Code"]}
+                        technology={item["technology_used"]}
+                        features={item["core_features"]}
+                    />
+                ))}
+            </BentoGrid>
+        </div>
+    );
+}
