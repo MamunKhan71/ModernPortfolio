@@ -39,26 +39,27 @@ export function TechnologyStack() {
 }
 
 export const skillsArray = [
-    { id: 1, name: "HTML5", icon: <FaHtml5 /> },
-    { id: 2, name: "CSS3", icon: <FaCss3Alt /> },
-    { id: 3, name: "JavaScript", icon: <DiJavascript /> },
-    { id: 4, name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
-    { id: 5, name: "Firebase", icon: <IoLogoFirebase /> },
-    { id: 6, name: "Next.js", icon: <RiNextjsFill /> },
-    { id: 7, name: "Axios", icon: <SiAxios /> },
-    { id: 8, name: "Node.js", icon: <FaNodeJs /> },
-    { id: 9, name: "Vite", icon: <SiVite /> },
-    { id: 10, name: "React", icon: <FaReact /> },
-    { id: 11, name: "MongoDB", icon: <SiMongodb /> },
-    { id: 12, name: "Express", icon: <SiExpress /> },
-    { id: 13, name: "Vercel", icon: <SiVercel /> },
-    { id: 14, name: "Netlify", icon: <SiNetlify /> },
-    { id: 15, name: "Postman", icon: <SiPostman /> },
-    { id: 16, name: "DaisyUI", icon: <SiDaisyui /> },
-    { id: 17, name: "Ant Design", icon: <SiAntdesign /> },
-    { id: 18, name: "JSON Web Tokens", icon: <SiJsonwebtokens /> },
-    { id: 19, name: "Python", icon: <FaPython /> },
-    { id: 20, name: "Flask", icon: <SiFlask /> },
-    { id: 21, name: "GitHub", icon: <FaGithub /> }
+    { id: 1, name: "HTML5", icon: <FaHtml5 key="html5" className="text-3xl" /> },
+    { id: 2, name: "CSS3", icon: <FaCss3Alt key="css3" className="text-3xl" /> },
+    { id: 3, name: "JavaScript", icon: <DiJavascript key="javascript" className="text-3xl" /> },
+    { id: 4, name: "Tailwind CSS", icon: <RiTailwindCssFill key="tailwind" className="text-3xl" /> },
+    { id: 5, name: "Firebase", icon: <IoLogoFirebase key="firebase" className="text-3xl" /> },
+    { id: 6, name: "Next.js", icon: <RiNextjsFill key="nextjs" className="text-3xl" /> },
+    { id: 7, name: "Axios", icon: <SiAxios key="axios" className="text-3xl" /> },
+    { id: 8, name: "Node.js", icon: <FaNodeJs key="nodejs" className="text-3xl" /> },
+    { id: 9, name: "Vite", icon: <SiVite key="vite" className="text-3xl" /> },
+    { id: 10, name: "React", icon: <FaReact key="react" className="text-3xl" /> },
+    { id: 11, name: "MongoDB", icon: <SiMongodb key="mongodb" className="text-3xl" /> },
+    { id: 12, name: "Express", icon: <SiExpress key="express" className="text-3xl" /> },
+    { id: 13, name: "Vercel", icon: <SiVercel key="vercel" className="text-3xl" /> },
+    { id: 14, name: "Netlify", icon: <SiNetlify key="netlify" className="text-3xl" /> },
+    { id: 15, name: "Postman", icon: <SiPostman key="postman" className="text-3xl" /> },
+    { id: 16, name: "DaisyUI", icon: <SiDaisyui key="daisyui" className="text-3xl" /> },
+    { id: 17, name: "Ant Design", icon: <SiAntdesign key="antdesign" className="text-3xl" /> },
+    { id: 18, name: "JSON Web Tokens", icon: <SiJsonwebtokens key="jwt" className="text-3xl" /> },
+    { id: 19, name: "Python", icon: <FaPython key="python" className="text-3xl" /> },
+    { id: 20, name: "Flask", icon: <SiFlask key="flask" className="text-3xl" /> },
+    { id: 21, name: "GitHub", icon: <FaGithub key="github" className="text-3xl" /> }
 ];
+
 
