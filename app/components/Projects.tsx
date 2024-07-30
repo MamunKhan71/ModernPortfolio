@@ -406,7 +406,7 @@ export function Projects() {
             <BentoGrid className="w-full">
                 {items.slice(0, 6).map((item, i) => (
                     <BentoGridItem
-                        key={i}
+                        key={item["Project ID"] || i}
                         title={item["Project Name"]}
                         description={item["Description"]}
                         header={<Skeleton imageLink={item["Thumbnail URL"]} />}
