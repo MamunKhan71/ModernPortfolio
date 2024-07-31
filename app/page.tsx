@@ -18,9 +18,9 @@ export default function Home() {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
       <div className="space-y-12 lg:space-y-48 lg:mt-24">
         <Header />
-        <div className="max-w-md md:max-w-4xl lg:max-w-7xl">
+        {/* <div className="max-w-md md:max-w-4xl lg:max-w-7xl">
           <TechnologyStack />
-        </div>
+        </div> */}
         <Education />
         <MyWorkingProcess />
         <Projects />
