@@ -68,7 +68,7 @@ export function MyWorkingProcess() {
     return (
         <div className="space-y-12" id="process">
             <TextGenerateEffect words="My working process" className="text-4xl text-center" />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4  relative z-10 lg:py-10 mx-auto">
                 {features.map((feature, index) => (
                     <Feature key={feature.title} {...feature} index={index} />
                 ))}

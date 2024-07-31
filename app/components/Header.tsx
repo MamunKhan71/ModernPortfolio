@@ -10,7 +10,7 @@ const Header = () => {
     const words = ["Full Stack Web Developer", "MERN Stack Developer"];
 
     return (
-        <div className="text-center flex justify-between items-center w-full" id='about'>
+        <div className="text-center flex flex-col-reverse lg:flex-row gap-12 lg:gap-0 justify-between items-center w-full" id='about'>
             <div className="flex-1 w-full flex items-center gap-12 justify-center">
                 <div>
                     <TypewriterEffectSmooth className="text-left" words={[
@@ -25,9 +25,8 @@ const Header = () => {
                     ]}
                     />
                     <div className="text-left mt-4">
-                        I&apos;m a
-                        <FlipWords words={words} /> <br />
-                        <p className="text-justify max-w-2xl  mt-4">Highly motivated Junior Software Developer skilled in HTML, CSS, JavaScript, DOM manipulation, OOP, ES6, React, and Tailwind CSS, with proficiency in Firebase, Next.js, Axios, Node.js, Vite, MongoDB, Express, and more. Seeking an entry-level position to enhance skills and contribute to impactful software projects.</p>
+                        <span className='hidden lg:block'>I&apos;m a <FlipWords words={words} /> </span>
+                        <p className="text-justify w-full lg:max-w-2xl mt-4">Highly motivated Junior Software Developer skilled in HTML, CSS, JavaScript, DOM manipulation, OOP, ES6, React, and Tailwind CSS, with proficiency in Firebase, Next.js, Axios, Node.js, Vite, MongoDB, Express, and more. Seeking an entry-level position to enhance skills and contribute to impactful software projects.</p>
                     </div>
                     <div className="flex items-start justify-start gap-6 flex-col">
                         <div className="flex items-start justify-start mt-4 gap-6">

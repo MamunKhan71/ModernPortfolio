@@ -4,9 +4,9 @@ import MagicButton from './ui/MagicButton'
 
 const Footer = () => {
     return (
-        <footer className='w-full mb-[100px] md:mb-5 pb-10 relative' id='footer'>
+        <footer className='w-full lg:mb-[100px] md:mb-5 pb-10 relative' id='footer'>
             <div className='flex flex-col items-center'>
-                <h1 className='text-5xl font-bold text-center lg:max-w-[45vw]'>Ready to take <span className='text-purple'>your</span> outside digital presents to the next level?</h1>
+                <h1 className='text-3xl lg:text-5xl font-bold text-center w-full lg:max-w-[45vw]'>Ready to take <span className='text-purple'>your</span> outside digital presents to the next level?</h1>
                 <p className='text-white-200 md:mt-10 my-5 text-center'>Reach out to me today, let&apos;s discuss together!</p>
                 <a href="mailto:mkmamun031@gmail.com">
                     <MagicButton title="Let's get in touch" icon={<FaLocationArrow />} position='right' />

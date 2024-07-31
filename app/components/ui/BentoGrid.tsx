@@ -74,12 +74,12 @@ export const BentoGridItem = ({
         <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
           {description}
         </div>
-        <div className='flex items-center justify-between mt-7 mb-3'>
-          <div className='flex items-center'>
+        <div className='flex items-center justify-between mt-7 mb-3 w-full'>
+          <div className='flex items-center w-full'>
             {technology?.map((tech, index) => {
               const IconComponent = tech;
               return (
-                <div key={index} className='border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 sm:w-8 sm:h-8 flex justify-center items-center' style={{ transform: `translateX(-${5 * index * 2}px)` }}>
+                <div key={index} className='w-full border border-white/[0.2] rounded-full bg-black h-10  flex justify-center items-center' style={{ transform: `translateX(-${5 * index * 2}px)` }}>
                   {/* <IconComponent  /> */}
                   {IconComponent}
                 </div>

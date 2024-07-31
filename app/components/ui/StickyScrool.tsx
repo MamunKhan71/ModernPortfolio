@@ -55,14 +55,14 @@ export const StickyScroll = ({
             animate={{
                 backgroundColor: backgroundColors[activeCard % backgroundColors.length],
             }}
-            className="h-[30rem] overflow-y-auto flex flex-col lg:flex-row justify-between relative space-x-10 rounded-md pr-10"
+            className="h-[30rem] overflow-y-auto flex flex-col lg:flex-row justify-between relative space-x-10 rounded-md lg:pr-10"
             ref={ref}
         >
-            <div className="div relative flex items-start px-4">
-                <div className="max-w-2xl mt-20" >
+            <div className="div relative flex items-start lg:px-4">
+                <div className="w-full max-w-2xl lg:mt-20" >
                     {content.map((item, index) => (
                         <div key={item.title + index}>
-                            <div className="space-y-6">
+                            <div className="space-y-6 ">
                                 <motion.h2
                                     initial={{
                                         opacity: 0,
@@ -98,14 +98,13 @@ export const StickyScroll = ({
                                     <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
                                 </button>
                             </div>
-
-                            <div className="h-40"></div>
+                            <div className="h-20 lg:h-40"></div>
                         </div>
                     ))}
                 </div>
             </div>
             <div
-                className={cn( 
+                className={cn(
                     "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
                     contentClassName
                 )}

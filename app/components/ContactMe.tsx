@@ -41,7 +41,7 @@ export function ContactMe() {
     return (
         <div className="space-y-12" id="contact">
             <TextGenerateEffect words="Let's get in touch" className="text-4xl text-center" />
-            <div className="w-full max-w-5xl mx-auto rounded-none md:rounded-2xl p-4 md:p-12 shadow-input  border-[0.2px] border-slate-800">
+            <div className="w-full max-w-5xl mx-auto rounded-xl p-4 md:p-12 shadow-input  border-[0.2px] border-slate-800">
                 <form className="my-8" onSubmit={handleSubmit} name="contact">
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                         <LabelInputContainer>

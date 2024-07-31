@@ -14,7 +14,7 @@ export function Profile() {
                             height={1000}
                             width={1000}
                             alt="profile-image"
-                            className="rounded-[var(--radius)] z-10 p-2"
+                            className="rounded-full lg:rounded-[var(--radius)] z-10 p-2"
                         />
                     </GlareCard>
                     {/* <Button duration={5000} children={<Image src={'/profile-black.png'} height={1000} width={1000} alt="profile-image" className="rounded-[1.75rem] z-10 p-2" />} /> */}
