@@ -22,17 +22,21 @@ import { SiFlask } from "react-icons/si";
 import { InfiniteMovingCards } from "./ui/MovingCards";
 import { FaGithub } from "react-icons/fa";
 import { TextGenerateEffect } from "./ui/TextGenerate";
-
+import Marquee from "react-fast-marquee";
+import { AnimatedTooltip } from "./ui/Tooltip";
 export function TechnologyStack() {
     return (
-        <div className="space-y-6" id="tech">
+        <div className="space-y-6 w-full">
             <TextGenerateEffect words="Technology Stack" className="text-4xl text-center" />
-            <div className="h-auto rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden w-full">
+            {/* <div className="h-auto rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden w-full">
                 <InfiniteMovingCards
                     items={skillsArray}
                     direction="left"
                     speed="slow"
                 />
+            </div> */}
+            <div className="flex gap-6 items-center justify-center flex-wrap w-full px-4 pt-12">
+                <AnimatedTooltip items={skillsArray} />
             </div>
         </div>
     );
@@ -59,7 +63,7 @@ export const skillsArray = [
     { id: 18, name: "JSON Web Tokens", icon: <SiJsonwebtokens key="jwt" className="text-3xl" /> },
     { id: 19, name: "Python", icon: <FaPython key="python" className="text-3xl" /> },
     { id: 20, name: "Flask", icon: <SiFlask key="flask" className="text-3xl" /> },
-    { id: 21, name: "GitHub", icon: <FaGithub key="github" className="text-3xl" /> }
+    { id: 22, name: "GitHub", icon: <FaGithub key="github" className="text-3xl" /> },
 ];
 
 

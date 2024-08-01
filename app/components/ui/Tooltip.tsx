@@ -16,7 +16,6 @@ export const AnimatedTooltip = ({
     items: {
         id: number;
         name: string;
-        
         icon: React.ReactNode;
     }[];
 }) => {
@@ -35,7 +34,7 @@ export const AnimatedTooltip = ({
     );
     const handleMouseMove = (event: any) => {
         const halfWidth = event.target.offsetWidth / 2;
-        x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
+        x.set(event.nativeEvent.offsetX - halfWidth); 
     };
 
     return (
@@ -76,7 +75,7 @@ export const AnimatedTooltip = ({
                             </motion.div>
                         )}
                     </AnimatePresence>
-                    <div className="object-cover hover:cursor-pointer p-2 !m-0 object-top flex items-center justify-center rounded-full h-14 w-14 border-[0.2px] group-hover:scale-105 group-hover:z-30 border-slate-800  relative transition duration-500">
+                    <div className="object-cover hover:cursor-pointer p-2 !m-0 object-top flex items-center justify-center rounded-lg h-14 w-14 border-[0.2px] group-hover:scale-105 group-hover:z-30 border-slate-800 relative transition duration-500">
                         {item.icon}
                     </div>
                 </div>
