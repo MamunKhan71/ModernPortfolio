@@ -68,7 +68,7 @@ export function MyWorkingProcess() {
     return (
         <div className="space-y-12" id="process">
             <TextGenerateEffect words="My working process" className="text-4xl text-center" />
-            <div className="grid grid-cols-2 lg:grid-cols-4  relative z-10 lg:py-10 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 lg:py-10 mx-auto">
                 {features.map((feature, index) => (
                     <Feature key={feature.title} {...feature} index={index} />
                 ))}
@@ -91,7 +91,7 @@ const Feature = ({
     return (
         <div
             className={cn(
-                "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
+                "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800 ",
                 (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
                 index < 4 && "lg:border-b dark:border-neutral-800"
             )}
@@ -111,7 +111,7 @@ const Feature = ({
                     {title}
                 </span>
             </div>
-            <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+            <p className="text-sm text-neutral-600 dark:text-neutral-300 lg:max-w-xs relative z-10 px-10 w-full">
                 {description}
             </p>
         </div>
