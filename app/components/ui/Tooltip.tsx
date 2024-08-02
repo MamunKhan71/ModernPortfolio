@@ -75,7 +75,7 @@ export const AnimatedTooltip = ({
                             </motion.div>
                         )}
                     </AnimatePresence>
-                    <div className="object-cover hover:cursor-pointer p-2 !m-0 object-top flex items-center justify-center rounded-lg h-14 w-14 border-[0.2px] group-hover:scale-105 group-hover:z-30 border-slate-800 relative transition duration-500">
+                    <div className="object-cover hover:cursor-pointer p-2 !m-0 object-top flex items-center justify-center rounded-lg h-14 w-14 border-[0.2px] group-hover:scale-105 group-hover:z-30 border-slate-800 relative transition duration-500 bg-black">
                         {item.icon}
                     </div>
                 </div>
