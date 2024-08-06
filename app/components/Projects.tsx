@@ -431,6 +431,7 @@ export function Projects() {
                         header={<Skeleton imageLink={item["Thumbnail URL"]} />}
                         className={cn("[&>p:text-lg]")}
                         liveLink={item["Live Link"]}
+                        projectId = {item["Project ID"]}
                         sourceCode={item["Source Code"]}
                         technology={item["technology_used"]}
                         features={item["core_features"]}

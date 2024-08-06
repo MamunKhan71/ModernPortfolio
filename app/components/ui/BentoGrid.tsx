@@ -1,6 +1,9 @@
+"use client"
 import { cn } from "@/lib/utils";
-import { FaGithub, FaLink, FaLocationArrow } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaLink, FaLocationArrow } from "react-icons/fa";
 import { HoverBorderGradient } from "./BorderGradient";
+import { IoCloseCircle } from "react-icons/io5";
+import { useEffect, useState } from "react";
 
 export const BentoGrid = ({
   className,
@@ -29,6 +32,7 @@ export const BentoGridItem = ({
   liveLink,
   technology,
   sourceCode,
+  projectId,
   features,
 }: {
   className?: string;
@@ -36,10 +40,26 @@ export const BentoGridItem = ({
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   liveLink?: string;
+  projectId?: string;
   technology?: React.ReactNode[];
   sourceCode?: string;
   features?: string[];
 }) => {
+
+  const [projects, setProjects] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [iframe, setIframe] = useState("")
+
+  const handleViewProjectClick = (projectIds: string, liveLinks: string) => {
+    setIframe(liveLinks);
+    const modalElement = document.getElementById(`my_modal_2/${projectIds}`) as HTMLDialogElement;
+
+    if (modalElement && typeof modalElement.showModal === 'function') {
+      modalElement.showModal();
+    } else {
+      console.error('Modal element or showModal method not found');
+    }
+  };
   return (
     <div
       className={cn(
@@ -88,7 +108,7 @@ export const BentoGridItem = ({
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <a href={liveLink}>
+          <a href={liveLink} target="_blank">
             <button className="inline-flex gap-2 text-sm lg:text-base h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-2 lg:px-4 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <FaLink /> View Project
             </button>
