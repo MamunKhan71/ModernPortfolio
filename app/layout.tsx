@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className} dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]` }>
         {children}
         <Toaster />
