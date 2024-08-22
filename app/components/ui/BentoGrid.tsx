@@ -63,7 +63,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1  bg-black rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 d dark:border-white/[0.2] border border-transparent justify-between flex flex-col space-y-3",
+        "row-span-1  bg-black rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 d border-white/[0.2] border justify-between flex flex-col space-y-3",
         className
       )}
     >
@@ -99,7 +99,7 @@ export const BentoGridItem = ({
             {technology?.map((tech, index) => {
               const IconComponent = tech;
               return (
-                <div key={index} className='w-full border border-white/[0.2] rounded-full bg-black h-10  flex justify-center items-center' style={{ transform: `translateX(-${5 * index * 2}px)` }}>
+                <div key={index} className='w-full border border-white/[0.2] rounded-full bg-black dark:text-white h-10 flex justify-center items-center' style={{ transform: `translateX(-${5 * index * 2}px)` }}>
                   {/* <IconComponent  /> */}
                   {IconComponent}
                 </div>
