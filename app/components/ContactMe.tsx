@@ -46,16 +46,16 @@ export function ContactMe() {
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                         <LabelInputContainer>
                             <Label htmlFor="name">Name</Label>
-                            <Input id="name" placeholder="Your name here" type="text" />
+                            <Input required id="name" placeholder="Your name here" type="text" />
                         </LabelInputContainer>
                     </div>
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="email">Email</Label>
-                        <Input id="email" placeholder="info@mdmamun.tech" type="email" />
+                        <Input required id="email" placeholder="info@mdmamun.tech" type="email" />
                     </LabelInputContainer>
                     <LabelInputContainer className="mb-8">
                         <Label htmlFor="subject">Subject</Label>
-                        <Input
+                        <Input required
                             id="subject"
                             placeholder="Subject"
                             type="text"
@@ -63,7 +63,7 @@ export function ContactMe() {
                     </LabelInputContainer>
                     <LabelInputContainer className="mb-8">
                         <Label htmlFor="message">Message</Label>
-                        <Input
+                        <Input required
                             id="message"
                             placeholder="Message"
                             type="text"
