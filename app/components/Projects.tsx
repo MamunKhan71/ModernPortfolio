@@ -129,6 +129,35 @@ const items = [
         ]
     },
     {
+        "Project Name": "HatBazaar",
+        "Project Type": "Full-Stack Web Application",
+        "Description": "A MERN stack app for searching, filtering, and sorting products with Firebase authentication.",
+        "Live Link": "https://hatbazaar-2c879.web.app/",
+        "Thumbnail URL": "https://res.cloudinary.com/dfwmhlhyo/image/upload/v1724917707/HatBazaar_ehd78u.png",
+        "Source Code": "https://github.com/MamunKhan71/HatBazaar",
+        "Project ID": "HB-001",
+        "core_features": [
+            "Product Listing",
+            "Advance Searching & Sort",
+            "Authentication"
+        ],
+        "technology_used": [
+            <FaReact key="react" />,
+            <FaNodeJs key="nodejs" />,
+            <DiJavascript key="javascript" />,
+            <IoLogoFirebase key="firebase" />,
+            <FaHtml5 key="html5" />,
+            <SiMongodb key="mongodb" />,
+            <FaCss3Alt key="css3" />,
+            <SiExpress key="express" />,
+            <SiJsonwebtokens key="jwt" />,
+            <SiAntdesign key="antdesign" />,
+            <FaGithub key="github" />,
+            <SiDaisyui key="daisyui" />
+        ]
+    }
+    ,
+    {
         "Project Name": "Online Art Shop",
         "Project Type": "E-Commerce Website",
         "Description": "An e-commerce website specializing in selling various art-related products such as paintings, sculptures, and artistic accessories.",
