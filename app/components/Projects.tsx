@@ -1,14 +1,16 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import { DiJavascript } from "react-icons/di";
-import { FaCss3Alt, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiAntdesign, SiDaisyui, SiExpress, SiJsonwebtokens, SiMongodb, SiNetlify, SiVite } from "react-icons/si";
+import { FaCookie, FaCss3Alt, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiAntdesign, SiAxios, SiDaisyui, SiExpress, SiJsonwebtokens, SiMailtrap, SiMongodb, SiMongoose, SiNetlify, SiReactrouter, SiTailwindcss, SiVite } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import Image from "next/image";
+import { MdNoEncryption } from "react-icons/md";
+import { TbBrandFramerMotion } from "react-icons/tb";
 const Skeleton = ({ imageLink }: { imageLink: string }) => (
     <div className="flex flex-1 w-full h-96 rounded-xl">
         <Image src={imageLink} height={0} width={0} sizes="100vw" className="w-full h-96 object-cover rounded-xl" alt="" />
@@ -80,7 +82,7 @@ const items = [
         "Project ID": "RE-002",
         "core_features": [
             "Property Listings",
-            "Transaction Management",
+            "Transaction",
             "User Authentication"
         ],
         "technology_used": [
@@ -96,6 +98,34 @@ const items = [
             <SiAntdesign key="antdesign" />,
             <FaGithub key="github" />,
             <SiDaisyui key="daisyui" />
+        ]
+    },
+    {
+        "Project Name": "AuthMaster",
+        "Project Type": "Authentication Platform",
+        "Description": "A MERN-based platform for secure user authentication, including signup, login, email verification, and password recovery.",
+        "Live Link": "https://authmaster-fo5w.onrender.com",
+        "Thumbnail URL": "https://res.cloudinary.com/dfwmhlhyo/image/upload/v1724911189/second_page_mkti7y.png",
+        "Source Code": "https://github.com/MamunKhan71/AuthMaster",
+        "Project ID": "AM-001",
+        "core_features": [
+            "Signup & Verification",
+            "Recovery & Welcome",
+            "OTP & Reset"
+        ],
+        "technology_used": [
+            <FaReact key='react' />,
+            <FaNodeJs key='nodejs' />,
+            <DiJavascript key='javascript' />,
+            <FaHtml5 key='html5' />,
+            <SiMongodb key='mongodb' />,
+            <SiExpress key='express' />,
+            <SiJsonwebtokens key='jwt' />,
+            <SiTailwindcss key='tailwindcss' />,
+            <SiMailtrap key='mailtrap' />,
+            <SiMongoose key='mongoose' />,
+            <TbBrandFramerMotion key='framer-motion' />,
+            <SiReactrouter key='react-router-dom' />,
         ]
     },
     {
@@ -371,12 +401,12 @@ const items = [
         "Project Type": "QR Code Generator",
         "Description": "An online utility for generating QR codes for various types of data, such as URLs, text, and contact information.",
         "Live Link": "https://qr-code-generator-mk.netlify.app/",
-        "Thumbnail URL": "https://i.ibb.co/fG5Hfy6/qrcode.png",
+        "Thumbnail URL": "https://res.cloudinary.com/dfwmhlhyo/image/upload/v1724916964/qrcode_qsrcsb.png",
         "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/qr%20code%20generator",
         "Project ID": "QRG-014",
         "core_features": [
-            "QR Code Generation",
-            "Data Input Options",
+            "QR Generation",
+            "Data Input",
             "Downloadable QR Codes"
         ],
         "technology_used": [
@@ -390,40 +420,37 @@ const items = [
             <SiAntdesign key="antdesign" />
         ]
     },
-    {
-        "Project Name": "Password Generator",
-        "Project Type": "Password Generator",
-        "Description": "A web-based tool for generating strong and secure passwords, helping users to enhance their online security.",
-        "Live Link": "https://password-generator-mk.netlify.app/",
-        "Thumbnail URL": "https://i.ibb.co/YPdGfnR/password.png",
-        "Source Code": "https://github.com/MamunKhan71/JavaScript-MiniProject/tree/main/password%20generator",
-        "Project ID": "PG-015",
-        "core_features": [
-            "Password Generation",
-            "Customizable Options",
-            "Copy to Clipboard"
-        ],
-        "technology_used": [
-            <FaReact key="react" />,
-            <FaNodeJs key="nodejs" />,
-            <DiJavascript key="javascript" />,
-            <FaHtml5 key="html5" />,
-            <FaCss3Alt key="css3" />,
-            <SiNetlify key="netlify" />,
-            <FaGithub key="github" />,
-            <SiAntdesign key="antdesign" />
-        ]
-    }
 ];
 
 
 
 export function Projects() {
+    const [startIndex, setStartIndex] = useState(0)
+    const [length, setLength] = useState(0)
+    const [endIndex, setEndIndex] = useState(6)
+    const [showButton, setShowButton] = useState(false)
+    useEffect(() => {
+        setLength(items.length - 1);
+    }, [items])
+    const handleMore = () => {
+        if (endIndex < length) {
+            const newEndIndex = Math.min(endIndex + 6, length);
+            setEndIndex(newEndIndex);
+        }
+        setShowButton(endIndex < length);
+    };
+    useEffect(() => {
+        setShowButton(endIndex < length);
+    }, [endIndex, length]);
+
+
+
+
     return (
         <div className="space-y-12" id="projects">
             <TextGenerateEffect words="Projects" className="text-4xl text-center" />
-            <BentoGrid className="w-full">
-                {items.slice(0, 6).map((item, i) => (
+            <BentoGrid className="w-full" handleMore={handleMore} showButton={showButton}>
+                {items.slice(startIndex, endIndex).map((item, i) => (
                     <BentoGridItem
                         key={item["Project ID"] || i}
                         title={item["Project Name"]}
@@ -431,7 +458,7 @@ export function Projects() {
                         header={<Skeleton imageLink={item["Thumbnail URL"]} />}
                         className={cn("[&>p:text-lg]")}
                         liveLink={item["Live Link"]}
-                        projectId = {item["Project ID"]}
+                        projectId={item["Project ID"]}
                         sourceCode={item["Source Code"]}
                         technology={item["technology_used"]}
                         features={item["core_features"]}

@@ -4,23 +4,45 @@ import { FaExternalLinkAlt, FaGithub, FaLink, FaLocationArrow } from "react-icon
 import { HoverBorderGradient } from "./BorderGradient";
 import { IoCloseCircle } from "react-icons/io5";
 import { useEffect, useState } from "react";
+import { IoIosMore } from "react-icons/io";
+import { FcNext, FcPrevious } from "react-icons/fc";
+import { motion } from 'framer-motion'
 
 export const BentoGrid = ({
   className,
   children,
+  showButton,
+  handleMore,
 }: {
   className?: string;
   children?: React.ReactNode;
+  handleMore: any,
+  showButton: boolean;
 }) => {
   return (
-    <div
-      className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ",
-        className
-      )}
-    >
-      {children}
-    </div>
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1}}
+        transition={{ duration: 0.25 }}
+        className={cn(
+          "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ",
+          className
+        )}
+      >
+        {children}
+      </motion.div>
+      <a className="flex items-center gap-4 justify-center w-full">
+        <button
+          onClick={handleMore}
+          className={`inline-flex gap-2 h-12 text-sm lg:text-base animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 lg:px-4 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ${!showButton ? 'hidden' : 'block'}`}
+        >
+          <IoIosMore /> More
+        </button>
+      </a>
+
+    </>
+
   );
 };
 
@@ -46,8 +68,6 @@ export const BentoGridItem = ({
   features?: string[];
 }) => {
 
-  const [projects, setProjects] = useState([])
-  const [loading, setLoading] = useState(true)
   const [iframe, setIframe] = useState("")
 
   const handleViewProjectClick = (projectIds: string, liveLinks: string) => {
@@ -61,7 +81,10 @@ export const BentoGridItem = ({
     }
   };
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.25}}
       className={cn(
         "row-span-1  bg-black rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 d border-white/[0.2] border justify-between flex flex-col space-y-3",
         className
@@ -120,6 +143,6 @@ export const BentoGridItem = ({
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
