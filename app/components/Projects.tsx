@@ -7,9 +7,12 @@ import { DiJavascript } from "react-icons/di";
 import { FaCookie, FaCss3Alt, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiAntdesign, SiAxios, SiDaisyui, SiExpress, SiJsonwebtokens, SiMailtrap, SiMongodb, SiMongoose, SiNetlify, SiReactrouter, SiTailwindcss, SiVite } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
+import { SiShadcnui } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import Image from "next/image";
+import { SiCloudinary } from "react-icons/si"
 import { MdNoEncryption } from "react-icons/md";
+import { RiNextjsLine } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 const Skeleton = ({ imageLink }: { imageLink: string }) => (
     <div className="flex flex-1 w-full h-96 rounded-xl">
@@ -44,6 +47,33 @@ const items = [
             <SiJsonwebtokens key="jwt" />
         ]
     },
+    {
+        "Project Name": "MediTap",
+        "Project Type": "Telemedicine Platform",
+        "Description": "Launched in June 1980 with a vision to 'Serve Humanity', MediTap provides accessible, high-quality, and affordable healthcare through a vast network of hospitals, diagnostic centers, and its telemedicine platform. It embraces advanced medical technology and global partnerships to offer the best care in South Asia.",
+        "Live Link": "https://meditap.netlify.app",
+        "Thumbnail URL": "https://res.cloudinary.com/dz3kxnsxr/image/upload/v1727195925/screencapture-main-resplendent-kataifi-9c3095-netlify-app-2024-09-24-22_37_50_xxr2ih.png",
+        "Source Code": "https://github.com/MamunKhan71/MediTap",
+        "Project ID": "MT-001",
+        "core_features": [
+            "Telemedicine",
+            "Diagnostic Services",
+            "Specialized Hospital"
+        ],
+        "technology_used": [
+            <RiNextjsLine key={"nextJs"} />,
+            <FaReact key="react" />,
+            <DiJavascript key="javascript" />,
+            <FaHtml5 key="html5" />,
+            <FaCss3Alt key="css3" />,
+            <FaGithub key="github" />,
+            <RiTailwindCssFill key="tailwind" />,
+            <SiShadcnui key={"ShadCn"} />,
+            <SiCloudinary key={"Cloudinary"} />,
+            <SiNetlify key="netlify" />,
+        ]
+    }
+    ,
     {
         "Project Name": "RuposhiBhojon",
         "Project Type": "Food Sharing Website",
